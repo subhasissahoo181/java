@@ -1,0 +1,33 @@
+  //Assignment MultiThreading
+//Write a java program that will create a thread and set the thread name, display the thread name, get the thread id, check the thread is currently alive or not.
+//import java.util.*;
+package MultiThreading;
+
+class MyThread extends Thread {
+	
+	public MyThread(String str){
+		super(str);
+	}
+	
+	public void run(){
+		System.out.println("Inside Thread : " );
+		}
+	
+	
+}
+
+public class Thread7 {
+	    public static void main(String args[]){
+		   MyThread ob1=new MyThread("Subhasis");
+		  ob1.start();
+         System.out.println("Id of ob1:"+ob1.getId());
+		 System.out.println("Name of ob1:"+ob1.getName());
+		 boolean a = ob1.isAlive();
+		 if (a==false){
+			System.out.println("Dead : " ); 
+		 }
+		 else{
+			 System.out.println("Alive : " );
+		 }
+	   }
+}

@@ -1,0 +1,26 @@
+//Assignment String.
+//Q-3 
+package String;
+import java.util.Scanner;
+import java.lang.String;
+public class String4 {
+	public static void main(String args[]) {
+		System.out.println(" Enter the String : ");
+		Scanner Sc = new Scanner(System.in);
+		String Str= Sc.nextLine();
+		char a;
+		System.out.print(" Original Name = " + Str);
+		System.out.println();
+		
+		System.out.print("Reversed Name= "); 
+	      for (int i=Str.length()-1; i>=0; i--)
+	      {
+	        a= Str.charAt(i);
+
+	        System.out.print(a);
+			
+	        
+	      }
+		
+	}
+}
